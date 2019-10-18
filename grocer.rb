@@ -15,7 +15,7 @@ end
   basket
 end
 
-def apply_coupons(basket, coupons)
+def apply_coupons(cart, coupons)
   # code here
   coupons.each do |coupon|
     if basket.keys.include? coupon[:thing]
