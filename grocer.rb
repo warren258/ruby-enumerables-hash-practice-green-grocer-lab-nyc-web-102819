@@ -17,7 +17,7 @@ end
 
 def apply_coupons(cart, coupons)
   # code here
-  coupons.each do |:coupon|
+  coupons.each do |coupon|
     if basket.keys.include? coupon[:thing]
       if basket[coupon[:thing]][:count] >= coupon[:num]
         new_thing = "#{coupon[:thing]} W/COUPON"
